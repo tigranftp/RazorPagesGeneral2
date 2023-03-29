@@ -19,10 +19,6 @@
 
     <!-- ALL PLUGINS -->
     <script src="js/modernizer.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/hoverdir.js"></script>
 </head>
 <body>
     <!-- LOADER -->
@@ -60,7 +56,7 @@
                                 <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-                                <ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -96,11 +92,9 @@
         </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
             @RenderBody()
-        </main>
-    </div>
+
+
 
     <footer class="footer">
         <div class="container">
@@ -169,8 +163,15 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>-->
 
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
+    <!-- ALL JS FILES -->
 
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/hoverdir.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
